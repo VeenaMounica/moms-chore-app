@@ -1,6 +1,10 @@
 import AppNavigator from "./src/navigation/AppNavigator";
-
+import { TaskProvider } from "./src/context/TaskContext";
 
 export default function App() {
-  return <AppNavigator />;
+  return (
+    <TaskProvider>
+      <AppNavigator />
+    </TaskProvider>
+  );
 }
